@@ -1,0 +1,530 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #EEE; */
+    
+}
+
+body{
+    background-color: #E1E1E1;
+}
+
+
+
+/* Header starts here */
+
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+   
+}
+
+
+.row{
+    width: 100%;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+.row::after{
+    content: '';
+    display: table;   
+    clear: both;
+}
+
+header{
+    background-color: #24a19c;
+    padding: 0% 1%;
+    text-align: center;
+}
+
+
+.row .logo a{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    
+    
+}
+
+.row .logo .logo{
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 15px;
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.2s;
+    padding: 15px;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    border-radius: 10px;
+    
+}
+
+/* Header ends here */
+
+
+/* Banner section starts here */
+#banner-section{
+    background-image: url('2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-contents h1{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3.5rem;
+    background-color: rgba(255, 255, 0, 0.884);
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+}
+
+.banner-contents p{
+    width: 300px;
+    margin: 15px auto;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.btn{
+    background-color: green;
+    width: 200px;
+    padding: 15px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+#banner-section::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+
+
+/* Banner section starts here */
+
+/* About sections starts here */
+
+#about-us-id{
+    padding: 1%;
+    
+}
+
+.about-us-content{
+    text-align: center;
+}
+
+.about-us-content h3{
+    font-size: 2rem;
+    margin-bottom: 14px;
+    font-weight: bolder;
+}
+.about-us-content p{
+    font-size: 1rem;
+    color: rgb(36, 34, 34);
+     
+}
+
+
+
+/* About sections ends here */
+
+
+/* Food menu starts here */
+
+#menu-id{
+    padding: 1%;
+}
+
+.card{
+    transition: 0.3s;
+    box-shadow: 1px 1px 1px 1px rgb(102, 98, 98);
+}
+
+.card-body{
+    text-align: center;
+}
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.item-desc{
+    background-color: rgb(165, 164, 164);
+}
+.item-name{
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.item-desc > p{
+    font-size: .1;
+    padding: 10px;
+    font-weight: bolder;
+    color: black;
+}
+
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* Food menu ends here */
+
+
+/* Contact section starts here */
+
+#contact-id{
+    background-color: rgb(85, 14, 136);
+    padding: 1%;
+}
+
+.contact-details{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-details p{
+    font-size: 1.2rem;
+}
+
+.contact-details h1{
+    margin-bottom: 10px;
+}
+
+
+.map{
+    width: 100%;
+    height: 300px;
+}
+
+
+address{
+    font-size: 1.3rem;
+}
+
+
+.dotted-hr{
+    border: 6px dotted white;
+    border-bottom:none;
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+p{
+    color: white;
+    font-size: 1.1rem;
+    
+}
+
+.contact-details a{
+    text-decoration: none;
+}
+
+.contact-details a:hover p{
+    transform: scale(1.1);
+}
+
+
+
+
+/* Contact section ends here */
+
+
+/* Footer section starts here */
+
+.footer{
+    background-color: black;
+    padding: 4%;
+    height: auto;
+    text-align: center;
+}
+
+.footer span{
+    color: red;
+    font-size: 1.5rem;
+    
+}
+
+.footer p{
+    font-size: 1.3rem;
+}
+
+.footer-desc{
+    /* margin-left: 10px;
+    display: flex;
+    justify-content: flex-start; */
+}
+
+.footer button{
+    font-size: 1.5rem;
+    border: none;
+    width: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    margin: 8px;
+    text-align: center;
+    
+}
+
+.footer button:hover{
+    
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+/* Footer section ends here */
+
+
+/* 
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+/* Small devices screen size starts here */
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+
+@media (min-width: 576px) {
+    
+.col-sm-1 {
+    width: 8.33%;
+}
+.col-sm-2 {
+    width: 16.66%;
+}
+.col-sm-3 {
+    width: 25%;
+}
+.col-sm-4 {
+    width: 33.33%;}
+.col-sm-5 {
+    width: 41.66%;
+}
+.col-sm-6 {
+    width: 50%;
+}
+.col-sm-7 {
+    width: 58.33%;
+}
+.col-sm-8 {
+    width: 66.66%;
+}
+.col-sm-9 {
+    width: 75%;
+}
+.col-sm-10 {
+    width: 83.33%;
+}
+.col-sm-11 {
+    width: 91.66%;
+}
+.col-sm-12 {
+    width: 100%;
+}
+  }
+
+/* Small devices screen size ends here */
+
+
+/* Medium devices screen size starts here */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    
+.col-md-1 {
+    width: 8.33%;
+}
+.col-md-2 {
+    width: 16.66%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-4 {
+    width: 33.33%;}
+.col-md-5 {
+    width: 41.66%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-7 {
+    width: 58.33%;
+}
+.col-md-8 {
+    width: 66.66%;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-10 {
+    width: 83.33%;
+}
+.col-md-11 {
+    width: 91.66%;
+}
+.col-md-12 {
+    width: 100%;
+}
+  }
+
+  /* Medium devices screen size ends here */
+
+
+  /* Large devices screen size starts here */
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+  @media (min-width: 992px) {
+
+      .footer-desc{
+          text-align: left;
+      }
+
+      .footer-icon{
+          text-align: right;
+      }
+
+      .logo{
+          text-align: left;
+      }
+
+
+      nav ul{
+          text-align: right;
+      }
+
+      nav ul li{
+          display: inline-block;
+      }
+      nav ul li a{
+          display: inline-block;
+      }
+
+
+      #banner-section{
+          position: relative;
+          height: 100vh;
+      }
+      .banner-contents{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          
+        }
+
+        .banner-contents h1{
+            width: 700px;
+            font-size: 3.5rem;
+        }
+        .banner-contents p{
+            width: 500px;
+            font-size: 2rem;
+        }
+    
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.33%;}
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 75%;
+        display: inline;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+      }
+
+  /* Large devices screen size ends here */
